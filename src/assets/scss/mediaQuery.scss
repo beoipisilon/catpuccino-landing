@@ -1,0 +1,241 @@
+:root {
+  --cor-fundo: #F7F2E8;
+  --preto: #1A1A1A;
+  --vermelho-escuro: #3C0E0E;
+}  
+
+@media screen and (max-width: 730px) {
+  header {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+  
+  .menu {
+      .nav-1, .nav-2 {
+          display: none;
+      }
+  }
+  
+  .mobile-menu {
+      display: block;
+      width: 100%;
+      height: auto;   
+      align-items: center;
+      margin-left: -25px;
+      z-index: 1;
+  }
+
+  .hamburguer-img {
+      z-index: 1;
+      display: block;
+  }
+
+  .nav-bar {
+      z-index: 1;
+  }
+
+  .logo {
+      width: 120px;
+      height: auto;
+  }   
+
+  body {
+      background-color: var(--cor-fundo);
+  }  
+
+  .container {
+      width: 100%;        
+      height: auto;    
+      margin-top: 7em;
+      //position: relative;         
+      //overflow: hidden;
+
+      .img-1 {
+          overflow: hidden;
+      }
+  } 
+
+  .image-container {
+      display: none;
+  }
+
+  .image-container-mobile {
+      display: block;
+
+      img {
+          position: absolute;           
+          margin-top: 0;
+          margin-left: 0;
+          left: 0rem;
+          top: -1.5rem;
+          z-index: -1;
+          width: 100%;         
+          height: auto;      
+      }
+  }
+
+  .img-1 {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      position: relative;         
+      //overflow: hidden;
+      //clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+  }      
+
+  .text-container {
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+
+      h1 {
+          font-size: 2rem;            
+      }
+
+      p {
+          max-width: 50%;
+      }
+  }
+
+  .cards {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;      
+      align-items: center;   
+  }
+
+  .card {
+      padding-top: 1.5rem;
+  }
+
+  .croissants {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 12rem;
+  }
+
+  .cf-text {
+      text-align: center;
+      margin-right: 0;
+
+      h1 {
+          font-size: 2rem;
+      }
+  }
+
+  .cp-img img {
+      display: none;
+  }
+
+  .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      padding-top: 3rem;
+      padding-bottom: 2rem;   
+      padding-left: 6%;    
+      padding-right: 6%;
+
+      &-text-1 {
+          padding-right: 0px;
+          margin-left: 12%;
+          align-items: left;
+          width: 100%;
+
+          h1 {
+              font-size: 2rem;
+              font-weight: bold;
+              line-height: 1;
+          }
+
+          h2 {
+              font-size: 1.25rem;
+              font-weight: 500;        
+          }
+      }
+
+      &-text-2 {       
+          padding-top: 1rem;    
+          width: 100%;
+          height: auto;
+
+          h3 {
+              font-size: 1rem;
+              font-weight: 800;
+          }
+
+          p {
+              font-weight: 500;
+          }
+      }
+  }
+
+  .enjoy {
+      flex-direction: column; 
+      height: auto; 
+      padding-top: 1rem;
+  }
+
+  .booking,
+  .where {
+      width: 100%; 
+      height: 50vh;
+      position: static;
+  }
+
+  .booking {
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 0px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 2rem;
+      h1 {
+          font-size: 2rem;
+      }
+
+      .b-text, .b-img {
+          flex: 1;
+      }
+
+      img {
+          margin-top: 22rem;
+          margin-left: -3.5rem;
+          width: 180%;
+          height: auto;
+      }
+  }
+
+  .where {       
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+  }
+
+  .hr {  
+      padding-top: 1rem;
+  }
+
+  .footer {        
+      display: flex;
+      flex-direction: column;   
+      padding-top: 0.5rem; 
+      padding-bottom: 1rem;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;   
+  }    
+
+  .footer-links {
+      display: none;
+  }
+
+  .coffee-pink input {
+      padding: .70rem 5rem;
+  }
+}
